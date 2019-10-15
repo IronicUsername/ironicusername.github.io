@@ -1,0 +1,45 @@
+title: working_title
+author: Deniz
+name: Deniz
+email: deniztoma512@gmail.com
+
+description: >
+  Hi. Some stuff about me and my projects.
+
+excerpt_separator: <!--more-->
+
+markdown: kramdown
+highlighter: rouge
+exclue:
+  - Gemfile
+  - Gemfile.lock
+
+permalink:           /:categories/:year/:month/:day/:title.html
+paginate: 5
+paginate_path:       "blog/page:num"
+
+baseurl: ""
+url: ""
+twitter:
+  username: sos
+  creator: sos
+
+social:
+  name: Deniz
+  links:
+    - https://twitter.com/sos
+    - https://www.linkedin.com/in/
+    - https://github.com/IronicUsername
+
+sass:
+  style: compressed
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+plugins:
+  - jekyll-feed
+
+encoding: utf-8
+show_drafts: TRUE
