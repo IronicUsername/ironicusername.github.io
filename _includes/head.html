@@ -9,12 +9,12 @@
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nanum+Gothic+Coding:400,700&display=swap">
 
   <!-- Inline CSS here -->
-  {% capture inline_css %}
-  {% include inline.scss %}
-  {% endcapture %}
   <style type="text/css">
-  {{ inline_css | scssify }}
-  </style>
+    {% capture inline_css %}
+      {% include inline.scss %}
+    {% endcapture %}
+    {{ inline_css | scssify }}
+    </style>
   <meta name="msapplication-TileColor" content="#666666">
   <meta name="msapplication-TileImage" content="/icons/mstile-144x144.png">
   <meta name="msapplication-config" content="/icons/browserconfig.xml">

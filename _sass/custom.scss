@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.navbar {
+  & > div.navbar-brand {
+    & > i {
+      margin: auto;
+      padding: .5rem;
+    }
+    & > a.navbar-item {
+      padding-left: 0 !important;
+    }
+  }
+}
+
+.footer {
+  display: flex !important;
+}
+
+.footer {
+  & > .content {
+    width: 33%;
+    & > .footer-sitenfo{
+      cursor: default;
+      & > a > i{
+          padding: .7rem;
+      }
+      & > span.mdot::before{
+        content: "\00B7";
+      }
+    }
+  }
+}

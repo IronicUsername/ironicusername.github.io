@@ -1,0 +1,29 @@
+github:
+  name: "GitHub"
+  baseURL: "https://github.com/"
+  icon: "fa-github"
+
+twitter:
+  name: "Twitter"
+  baseURL: "https://twitter.com/"
+  icon: "fa-twitter"
+
+email:
+  name: "Email me"
+  baseURL: "mailto:"
+  icon: "fa-envelope"
+
+linkedin:
+  name: "LinkedIn"
+  baseURL: "https://linkedin.com/in/"
+  icon: "fa-linkedin"
+
+instagram:
+  name: "Instagram"
+  baseURL: "https://www.instagram.com/"
+  icon: "fa-instagram"
+
+spotify:
+  name: "Spotify"
+  baseURL: "https://open.spotify.com/user/"
+  icon: "fa-spotify"

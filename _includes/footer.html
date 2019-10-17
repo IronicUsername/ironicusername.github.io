@@ -1,15 +1,30 @@
-<footer>
-  <div class="footer set-left">
-    <p>© {{ 'now' | date: "%Y"}} working_title</p>
+<footer class="footer">
+  <div class="content has-text-left">
+    <a href="{{site.baseurl}}">©{{'now'|date:"%Y"}}_{{site.title}}</a>
   </div>
-  <div class="footer set-mid">
-      <p><a href="#"><i class="fab fa-github"></i></a></p>
-      <p><a href="#"><i class="fab fa-twitter"></i></a></p>
+  <div class="content has-text-centered">
+    <div class="footer-sitenfo">
+      {%- for link in site.social-network-links -%}
+        {%- assign curkey = link[0] -%}
+        {%- assign element = site.data.SocialNetworks[curkey] -%}
+          <a href="{{element.baseURL}}{{site.social-network-links[curkey]}}" target="_blank">
+            {%- if curkey == 'email' -%}
+            <i class="fas {{element.icon}}"></i></a>
+            {%- else -%}
+            <i class="fab {{element.icon}}"></i></a>
+          {%- endif -%}
+      {%- endfor -%}
+    </div>
   </div>
-  <div class="footer set-right">
-    <p><a href="#">Contact</a></p>
-    <p><a href="">Blog</a></p>
-    <p><a href="{{ site.baseurl }}{{ pages }}/about">About</a></p>
-    <p><a href="{{ site.baseurl }}{{ site.pages.url }}/impressum">Impressum</a></p>
+  <div class="content has-text-right">
+    <div class="footer-sitenfo">
+      <a href="{{site.baseurl}}{%link pages/contact.md%}">contact</a>
+      <span class="mdot"></span>
+      <a href="{{site.baseurl}}/blog">blog</a>
+      <span class="mdot"></span>
+      <a href="{{site.baseurl}}{%link pages/about.md%}">about</a>
+      <span class="mdot"></span>
+      <a href="{{site.baseurl}}{%link pages/impressum.md%}">impressum</a>
+    </div>
   </div>
 </footer>
