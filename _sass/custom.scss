@@ -1,9 +1,11 @@
 @charset "utf-8";
 
+$break-mid: 515px;
+
 .navbar {
   & > div.navbar-brand {
     & > i {
-      margin: auto;
+      margin: auto 0;
       padding: .5rem;
     }
     & > a.navbar-item {

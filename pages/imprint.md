@@ -1,7 +1,7 @@
 ---
 layout: page
-title: impressum
-permalink: /impressum/
+title: imprint
+permalink: /imprint/
 ---
 legal shit cause german law says it:
 
