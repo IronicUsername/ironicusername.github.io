@@ -10,9 +10,9 @@
 
   <!-- Inline CSS here -->
   <style type="text/css">
-    {% capture inline_css %}
-      {% include inline.scss %}
-    {% endcapture %}
+    {%- capture inline_css -%}
+      {%- include inline.scss -%}
+    {%- endcapture -%}
     {{ inline_css | scssify }}
     </style>
   <meta name="msapplication-TileColor" content="#666666">
